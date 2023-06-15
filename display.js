@@ -5,7 +5,7 @@ class Display {
         this.calculador = new Calculadora();
         this.tipoOperacion = undefined;
         this.valorAnterior = '';
-        this.valorActual = '';
+        this.valorActual = '0';
         this.signos = {
             sumar: '+',
             dividir: '%',
@@ -36,10 +36,14 @@ class Display {
 
 
     agregarNumero(numero) {
-        if(numero === '.' && this.valorActual.includes('.')) return
-        this.valorActual = this.valorActual.toString() + numero.toString();
+        if (this.valorActual === '0' && numero !== '.') {
+            this.valorActual = numero.toString();
+        } else {
+            this.valorActual += numero.toString();
+        }
         this.imprimirValores();
     }
+    
 
     imprimirValores() {
         this.displayValorActual.textContent = this.valorActual;
