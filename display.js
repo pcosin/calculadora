@@ -8,7 +8,7 @@ class Display {
         this.valorActual = '0';
         this.signos = {
             sumar: '+',
-            dividir: '%',
+            dividir: '/',
             multiplicar: 'x',
             restar: '-', 
         }
