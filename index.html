@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Calculator app</title>
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <main class="main">
+        <div class="nav_bar">
+          <h1>calc</h1>
+          <div class="theme-wrapper">
+            <p>Theme</p>
+            <div class="theme-toggler" id="theme-toggler">
+              <span class="toggler"></span>
+            </div>
+          </div>          
+        </div>
+
+        <div class="resultado display">
+          <div class="valor-anterior" id="valor-anterior"></div>
+          <div class="valor-actual" id="valor-actual">0</div>  
+        </div>
+        
+
+        <div class="main_calculator calculadora">
+          <button class="btn numero" value="7">7</button>
+          <button class="btn numero" value="8">8</button>
+          <button class="btn numero" value="9">9</button>
+          <button onclick="display.borrar()" class="del">DEL</button>
+          <button class="btn numero" value="4">4</button>
+          <button class="btn numero" value="5">5</button>
+          <button class="btn numero" value="6">6</button>
+          <button class="btn operador" value="sumar">+</button>
+          <button class="btn numero" value="1">1</button>
+          <button class="btn numero" value="2">2</button>
+          <button class="btn numero" value="3">3</button>
+          <button class="btn operador" value="restar">-</button>
+          <button class="btn numero">.</button>
+          <button class="btn numero" value="0">0</button>
+          <button class="btn operador" value="dividir">/</button>
+          <button class="btn operador" value="multiplicar">x</button>
+          <button onclick="display.borrarTodo()" class="reset">RESET</button>
+          <button value="igual" class="igual operador">=</button>
+        </div>
+      </main>
+    </div>
+    <script src="./display.js" type="text/javascript"></script> 
+    <script src="./calculadora.js" type="text/javascript"></script> 
+    <script src="./main.js" type="text/javascript"></script>
+  </body>
+</html>
