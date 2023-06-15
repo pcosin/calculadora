@@ -2,6 +2,8 @@
 
 ![Design preview for the Calculator app coding challenge](./design/desktop-preview.jpg)
 
+# Online web [Calculator app](https://pcosin.github.io/calculadora/)
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
